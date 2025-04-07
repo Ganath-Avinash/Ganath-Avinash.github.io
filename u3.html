@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="icon" href="PNG/w.png">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Poppins;
+        background: rgb(238,174,202);
+        background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    }
+    .container{
+        width: 90%;
+        margin: 10px auto;
+        columns: 4;
+        column-gap: 20px;
+    }    
+    .container .box{
+        width: 100%;
+        margin-bottom: 10px;
+        break-inside: avoid;
+    }
+    img{
+        max-width: 100%;
+        border-radius: 15px;
+        margin-left: 0px;
+        margin-right: 20px;
+        image-rendering: pixelated  ;
+    }
+    img:hover{
+        scale: 101%;
+        z-index: 1;
+        cursor: pointer;
+    }
+    @media (max-width:1200px){
+        .container{
+        width: calc(100%-40px);
+        columns: 3;
+        }
+
+    }
+    @media (max-width:768px){
+        .container{
+        columns: 2;
+        }
+    }
+    @media (max-width:480px){
+        .container{
+        columns: 1;
+        }
+    }
+    button.f {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        border-radius: 15px;
+        padding: 12px;
+        background-color: #df82c9;
+        color: white;
+        transform: translateX(100%);
+        border: 2px;
+        font-size: 16px;
+        transition: all 0.4s ease;
+        font-size: smaller;
+        display: none;
+        }
+        button.f:hover {
+        scale: 103%;
+        cursor: pointer;
+        background-color: #bf6bbb;
+        border-color: #723c63;
+        transition: all 0.4s ease;
+        }
+        div.box:hover .f{
+        display: block;
+        }
+        a.cat{
+            padding: 20px;
+        }
+        div.cat{
+            display: flex;
+            justify-content: center;
+        }
+        figcaption{
+            color: black;
+            text-align: center;
+            font-size: medium;
+            font-family: Poppins;
+            padding: 10px;
+            margin-top: 5px;
+            transition: 0.3s ease-in;
+            border-radius: 3px;
+        }
+        figcaption:hover{
+            border: 0px solid black;
+            scale: 105%;
+            font-weight: 500;
+            font-size: 18px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.274);
+            transition: 0.3s ease-in;
+            
+        }
+        img.c{
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.349);
+            border: 1px black solid;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            transition: 0.3s ease;
+            image-rendering: auto;
+        }
+        img.c:hover{
+            background-color: rgba(0, 0, 0, 0.194);
+            scale: 105%;
+            border: 0px transparent ;
+            border-radius: 10px;
+            transition: 0.3s ease;
+        }
+        a.ff{
+            all:unset;float:  right;margin-right: 30px;font-size: large;
+            transition: 0.3s all ease;
+            padding: 3px;
+        }
+        a.ff:hover{
+            cursor: pointer;
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+            transition: 0.3s all ease;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: white ;backdrop-filter: blur(10px);position: sticky;top:0px;z-index: 2;height:70px;box-shadow: 4px 4px 8px black;" class="kk">
+        <h1 style="margin-left: 10px;font-family: 'Playwrite IT Moderna', cursive;position: absolute;top: 5px;">
+            Bytes
+        </h1>
+        <ul style="padding-top: 20px;">
+            <li><a class="ff" href="s1.html" target="_self">Home</a></li>
+        </ul></div>
+    <br>
+    <br>
+    <h1 style="text-align: center;">Game Based Images</h1><br><br>
+    <div class="container">
+        <div class="box"><img class="i" src="Game/a1 (23).jpg"><a href="Game/a1 (23).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (19).webp"><a href="Game/a1 (19).webp" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (20).jpg"><a href="Game/a1 (20).jpg"style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (21).webp"><a href="Game/a1 (21).webp" style="text-decoration: none;"download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (22).webp"><a href="Game/a1 (22).webp" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (18).webp"><a href="Game/a1 (18).webp" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (24).jpg"><a href="Game/a1 (24).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (25).jpg"><a href="Game/a1 (25).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (26).jpg"><a href="Game/a1 (26).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (27).jpg"><a href="Game/a1 (27).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (28).jpg"><a href="Game/a1 (28).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (29).jpg"><a href="Game/a1 (29).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (30).jpg"><a href="Game/a1 (30).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (31).jpg"><a href="Game/a1 (31).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (32).jpg"><a href="Game/a1 (32).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (33).jpg"><a href="Game/a1 (33).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (34).jpg"><a href="Game/a1 (34).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (35).jpg"><a href="Game/a1 (35).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (36).png"><a href="Game/a1 (36).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (37).jpg"><a href="Game/a1 (37).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (38).jpg"><a href="Game/a1 (38).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (39).jpg"><a href="Game/a1 (39).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (40).webp"><a href="Game/a1 (40).webp" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (41).webp"><a href="Game/a1 (41).webp" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (42).webp"><a href="Game/a1 (42).webp" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (43).jpg"><a href="Game/a1 (43).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (44).jpg"><a href="Game/a1 (44).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (45).jpg"><a href="Game/a1 (45).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (1).png"><a href="Game/a1 (1).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (2).png"><a href="Game/a1 (2).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (3).png"><a href="Game/a1 (3).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (4).png"><a href="Game/a1 (4).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (5).png"><a href="Game/a1 (5).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (6).png"><a href="Game/a1 (6).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (7).png"><a href="Game/a1 (7).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (8).png"><a href="Game/a1 (8).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (9).png"><a href="Game/a1 (9).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (10).png"><a href="Game/a1 (10).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (11).png"><a href="Game/a1 (11).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (12).png"><a href="Game/a1 (12).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (13).png"><a href="Game/a1 (13).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (14).png"><a href="Game/a1 (14).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (15).png"><a href="Game/a1 (15).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (16).png"><a href="Game/a1 (16).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Game/a1 (17).png"><a href="Game/a1 (17).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+            
+    </div>
+        <br><br><br>
+        <h2 style="margin-left: 10px;">Try Visiting Other Categories :</h2>
+        <br>
+        <div class="cat" style="display: flex;flex-wrap: wrap;">
+            <a class="cat" style="text-decoration: none;" href="u1.html" target="_self"><img class="c" src="wave.png"><figcaption>Nature</figcaption></a>
+            <a class="cat" style="text-decoration: none;" href="u2.html" target="_self"><img class="c" src="eren.png"><figcaption>Anime</figcaption></a>
+            <a class="cat" style="text-decoration: none;" href="u4.html" target="_self"><img class="c" src="aes.png"><figcaption>Minimalistic</figcaption></a>
+        </div><br><br><hr>
+        <p style="font-size: 14px;margin-left: 10px;">&copy; 2025 Wits & Bytes. All rights reserved.</p>
+        <hr>
+</body>
+</html>

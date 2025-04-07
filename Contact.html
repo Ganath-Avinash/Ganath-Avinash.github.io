@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Help </title>
+    <link rel="icon" href="w.jpg">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="Contact.css">
+    <style>
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+    h3.t {
+        animation: bounce 1.5s infinite;
+    }
+</style>
+</head>
+<body>
+    <br>
+        <div class="container">
+            <h2 style="text-align:center;padding: 10px;">Contact Us</h2>
+            <p style="font-size: large;text-align: center;padding-bottom: 20px;">If you have any questions or need help, feel free to reach out!</p><br><br>    
+            <center>
+                <form action="https://api.web3forms.com/submit" onsubmit="return ok()" method="POST">
+                <input type="hidden" name="access_key" value="c2d0d2f2-6ee1-4ead-a5dc-4e67ce03c6b4">
+                <input type="text" id="i" name="name" placeholder="Enter Name" required>
+                <input type="email" id="il" name="email" placeholder="Enter Gmail" required>
+                <textarea name="message" id="ik" placeholder="Enter Query" required></textarea>
+                <button type="submit">Submit Form</button><br><br>         
+                </form>
+            </center>
+        </div><br><br><br>
+        <h3 class="t" id="ans" style="text-align: center;font-weight: 500;"></h3>
+        <div style="position: absolute;bottom:0px;left: 10px;padding-top: 5px;" class="container">
+            <p style="font-size: 14px;">&copy; 2025 Wits & Bytes. All rights reserved.</p>
+        </div>
+        <script>
+            function ok() {
+                const name = document.getElementById("i").value;
+                const email = document.getElementById("il").value;
+                const message = document.getElementById("ik").value;
+                
+                let errorMessage = "";
+                const namePattern = /^[a-zA-Z]+(?: [a-zA-Z]+)*$/;
+                if (name === "") {
+                    errorMessage += "Please enter your name to submit the form.\n";
+                }
+                if (!namePattern.test(name)) {
+                    errorMessage += "Please enter a valid name (text only).\n";
+                }
+                if (message === "") {
+                    errorMessage += "Please enter some query to submit the form.\n";
+                }
+                const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                if (!emailPattern.test(email)) {
+                    errorMessage += "Enter a valid email ID.\n";
+                }
+                
+                if (errorMessage !== "") {
+                    alert(errorMessage);
+                    return false;
+                }
+                return true;
+            }
+        </script>
+</body>
+</html>

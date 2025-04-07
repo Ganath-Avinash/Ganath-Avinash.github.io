@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link rel="icon" href="PNG/w.png">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Poppins;
+        background: rgb(238,174,202);
+        background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    }
+    .container{
+        width: 90%;
+        margin: 10px auto;
+        columns: 4;
+        column-gap: 20px;
+    }    
+    .container .box{
+        width: 100%;
+        margin-bottom: 10px;
+        break-inside: avoid;
+    }
+    img{
+        max-width: 100%;
+        border-radius: 15px;
+        margin-left: 0px;
+        margin-right: 20px;
+        image-rendering: pixelated  ;
+    }
+    img:hover{
+        scale: 101%;
+        z-index: 1;
+        cursor: pointer;
+    }
+    @media (max-width:1200px){
+        .container{
+        width: calc(100%-40px);
+        columns: 3;
+        }
+
+    }
+    @media (max-width:768px){
+        .container{
+        columns: 2;
+        }
+    }
+    @media (max-width:480px){
+        .container{
+        columns: 1;
+        }
+    }
+    button.f {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        border-radius: 15px;
+        padding: 12px;
+        background-color: #df82c9;
+        color: white;
+        transform: translateX(100%);
+        border: 2px;
+        font-size: 16px;
+        transition: all 0.4s ease;
+        font-size: smaller;
+        display: none;
+        }
+        button.f:hover {
+        scale: 103%;
+        cursor: pointer;
+        background-color: #bf6bbb;
+        border-color: #723c63;
+        transition: all 0.4s ease;
+        }
+        div.box:hover .f{
+        display: block;
+        }
+        a.cat{
+            padding: 20px;
+        }
+        div.cat{
+            display: flex;
+            justify-content: center;
+        }
+        figcaption{
+            color: black;
+            text-align: center;
+            font-size: medium;
+            font-family: Poppins;
+            padding: 10px;
+            margin-top: 5px;
+            transition: 0.3s ease-in;
+            border-radius: 3px;
+        }
+        figcaption:hover{
+            border: 0px solid black;
+            scale: 105%;
+            font-weight: 500;
+            font-size: 18px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.274);
+            transition: 0.3s ease-in;
+            
+        }
+        img.c{
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.349);
+            border: 1px black solid;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            transition: 0.3s ease;
+            image-rendering: auto;
+        }
+        img.c:hover{
+            background-color: rgba(0, 0, 0, 0.194);
+            scale: 105%;
+            border: 0px transparent ;
+            border-radius: 10px;
+            transition: 0.3s ease;
+        }
+        a.ff{
+            all:unset;float:  right;margin-right: 30px;font-size: large;
+            transition: 0.3s all ease;
+            padding: 3px;
+        }
+        a.ff:hover{
+            cursor: pointer;
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+            transition: 0.3s all ease;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: white ;backdrop-filter: blur(10px);position: sticky;top:0px;z-index: 2;height:70px;box-shadow: 4px 4px 8px black;" class="kk">
+        <h1 style="margin-left: 10px;font-family: 'Playwrite IT Moderna', cursive;position: absolute;top: 5px;">
+            Bytes
+        </h1>
+        <ul style="padding-top: 20px;">
+            <li><a class="ff" href="s1.html" target="_self">Home</a></li>
+        </ul></div>
+    <br>
+    <br>
+    <h1 style="text-align: center;">Anime Based Images</h1><br><br>
+    <div class="container">
+        <div class="box"><img class="i" src="Anime/a (1).jpeg"><a href="Anime/a (1).jpeg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (2).webp"><a href="Anime/a (2).webp" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (3).png"><a href="Anime/a (3).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (4).webp"><a href="Anime/a (4).webp" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (5).jpg"><a href="Anime/a (5).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (6).webp"><a href="Anime/a (6).webp" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (7).jpeg"><a href="Anime/a (7).jpeg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (8).jpeg"><a href="Anime/a (8).jpeg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (9).png"><a href="Anime/a (9).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (10).png"><a href="Anime/a (10).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/izuku.jpeg"><a href="Anime/izuku.jpeg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>    
+        <div class="box"><img class="i" src="Anime/a (11).png"><a href="Anime/a (11).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (12).png"><a href="Anime/a (12).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (13).png"><a href="Anime/a (13).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (14).png"><a href="Anime/a (14).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (15).png"><a href="Anime/a (15).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (16).png"><a href="Anime/a (16).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (17).png"><a href="Anime/a (17).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (18).jpg"><a href="Anime/a (18).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/EREN.jpeg"><a href="Anime/EREN.jpeg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (19).png"><a href="Anime/a (19).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (20).webp"><a href="Anime/a (20).webp" style="text-decoration: none;"download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (21).jpg"><a href="Anime/a (21).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (22).jpeg"><a href="Anime/a (22).jpeg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (23).png"><a href="Anime/a (23).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (24).jpeg"><a href="Anime/a (24).jpeg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (25).jpg"><a href="Anime/a (25).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (26).webp"><a href="Anime/a (26).webp" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (27).jpeg"><a href="Anime/a (27).jpeg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (28).png"><a href="Anime/a (28).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (29).png"><a href="Anime/a (29).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (30).jpeg"><a href="Anime/a (30).jpeg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (31).webp"><a href="Anime/a (31).webp" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (32).jpeg"><a href="Anime/a (32).jpeg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (33).jpg"><a href="Anime/a (33).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (34).png"><a href="Anime/a (34).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (35).png"><a href="Anime/a (35).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (36).webp"><a href="Anime/a (36).webp" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (37).png"><a href="Anime/a (37).png" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (38).jpg"><a href="Anime/a (38).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (39).jpg"><a href="Anime/a (39).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="Anime/a (40).jpg"><a href="Anime/a (40).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        </div>
+        <br><br><br>
+        <h2 style="margin-left: 10px;">Try Visiting Other Categories :</h2>
+        <br>
+        <div class="cat" style="display: flex;flex-wrap: wrap;">
+            <a class="cat" style="text-decoration: none;" href="u1.html" target="_self"><img class="c" src="wave.png"><figcaption>Nature</figcaption></a>
+            <a class="cat" style="text-decoration: none;" href="u4.html" target="_self"><img class="c" src="aes.png"><figcaption>Minimalistic</figcaption></a>
+            <a class="cat" style="text-decoration: none;" href="u3.html" target="_self"><img class="c" src="game.png"><figcaption>Game</figcaption></a>
+        </div><br><br><hr>
+        <p style="font-size: 14px;margin-left: 10px;">&copy; 2025 Wits & Bytes. All rights reserved.</p>
+        <hr>
+</body>
+</html>

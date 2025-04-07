@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalistic</title>
+    <link rel="icon" href="PNG/w.png">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Poppins;
+        background: rgb(238,174,202);
+        background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    }
+    .container{
+        width: 90%;
+        margin: 10px auto;
+        columns: 4;
+        column-gap: 20px;
+    }    
+    .container .box{
+        width: 100%;
+        margin-bottom: 10px;
+        break-inside: avoid;
+    }
+    img{
+        max-width: 100%;
+        border-radius: 15px;
+        margin-left: 0px;
+        margin-right: 20px;
+        image-rendering: pixelated  ;
+    }
+    img:hover{
+        scale: 101%;
+        z-index: 1;
+        cursor: pointer;
+    }
+    @media (max-width:1200px){
+        .container{
+        width: calc(100%-40px);
+        columns: 3;
+        }
+
+    }
+    @media (max-width:768px){
+        .container{
+        columns: 2;
+        }
+    }
+    @media (max-width:480px){
+        .container{
+        columns: 1;
+        }
+    }
+    button.f {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        border-radius: 15px;
+        padding: 12px;
+        background-color: #df82c9;
+        color: white;
+        transform: translateX(100%);
+        border: 2px;
+        font-size: 16px;
+        transition: all 0.4s ease;
+        font-size: smaller;
+        display: none;
+        }
+        button.f:hover {
+        scale: 103%;
+        cursor: pointer;
+        background-color: #bf6bbb;
+        border-color: #723c63;
+        transition: all 0.4s ease;
+        }
+        div.box:hover .f{
+        display: block;
+        }
+        a.cat{
+            padding: 20px;
+        }
+        div.cat{
+            display: flex;
+            justify-content: center;
+        }
+        figcaption{
+            color: black;
+            text-align: center;
+            font-size: medium;
+            font-family: Poppins;
+            padding: 10px;
+            margin-top: 5px;
+            transition: 0.3s ease-in;
+            border-radius: 3px;
+        }
+        figcaption:hover{
+            border: 0px solid black;
+            scale: 105%;
+            font-weight: 500;
+            font-size: 18px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.274);
+            transition: 0.3s ease-in;
+            
+        }
+        img.c{
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.349);
+            border: 1px black solid;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            transition: 0.3s ease;
+            image-rendering: auto;
+        }
+        img.c:hover{
+            background-color: rgba(0, 0, 0, 0.194);
+            scale: 105%;
+            border: 0px transparent ;
+            border-radius: 10px;
+            transition: 0.3s ease;
+        }
+        a.ff{
+            all:unset;float:  right;margin-right: 30px;font-size: large;
+            transition: 0.3s all ease;
+            padding: 3px;
+        }
+        a.ff:hover{
+            cursor: pointer;
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+            transition: 0.3s all ease;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: white ;backdrop-filter: blur(10px);position: sticky;top:0px;z-index: 2;height:70px;box-shadow: 4px 4px 8px black;" class="kk">
+    <h1 style="margin-left: 10px;font-family: 'Playwrite IT Moderna', cursive;position: absolute;top: 5px;">
+        Bytes
+    </h1>
+    <ul style="padding-top: 20px;">
+        <li><a class="ff" href="s1.html" target="_self">Home</a></li>
+    </ul>
+    </div>
+    <br>
+    <br>
+    <h1 style="text-align: center;">Minimalistic Images</h1><br><br>
+    <div class="container">
+        <div class="box"><img class="i" src="p11.jpg"><a href="p11.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p12.jpg"><a href="p12.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p13.jpg"><a href="p13.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p14.jpg"><a href="p14.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p15.jpg"><a href="p15.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p16.jpg"><a href="p16.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p17.jpg"><a href="p17.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p18.jpg"><a href="p18.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p19.jpg"><a href="p19.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p20.jpg"><a href="p20.jpg" style="text-decoration: none;"download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (1).jpg"><a href="a1 (1).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (2).jpg"><a href="a1 (2).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (3).jpg"><a href="a1 (3).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (4).jpg"><a href="a1 (4).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (5).jpg"><a href="a1 (5).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (6).jpg"><a href="a1 (6).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (7).jpg"><a href="a1 (7).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (8).jpg"><a href="a1 (8).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (9).jpg"><a href="a1 (9).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (10).jpg"><a href="a1 (10).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (11).jpg"><a href="a1 (11).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (12).jpg"><a href="a1 (12).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (13).jpg"><a href="a1 (13).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (14).jpg"><a href="a1 (14).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (15).jpg"><a href="a1 (15).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (16).jpg"><a href="a1 (16).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (17).jpg"><a href="a1 (17).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (18).jpg"><a href="a1 (18).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (19).jpg"><a href="a1 (19).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (20).jpg"><a href="a1 (20).jpg" style="text-decoration: none;"download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (21).jpg"><a href="a1 (21).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (22).jpg"><a href="a1 (22).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (23).jpg"><a href="a1 (23).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (24).jpg"><a href="a1 (24).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (25).jpg"><a href="a1 (25).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (26).jpg"><a href="a1 (26).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (27).jpg"><a href="a1 (27).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (28).jpg"><a href="a1 (28).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (29).jpg"><a href="a1 (29).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (30).jpg"><a href="a1 (30).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (31).jpg"><a href="a1 (31).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (32).jpg"><a href="a1 (32).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (33).jpg"><a href="a1 (33).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (34).jpg"><a href="a1 (34).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (35).jpg"><a href="a1 (35).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (36).jpg"><a href="a1 (36).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (37).jpg"><a href="a1 (37).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (38).jpg"><a href="a1 (38).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (39).jpg"><a href="a1 (39).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (40).jpg"><a href="a1 (40).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (41).jpg"><a href="a1 (41).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (42).jpg"><a href="a1 (42).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (43).jpg"><a href="a1 (43).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (44).jpg"><a href="a1 (44).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (45).jpg"><a href="a1 (45).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (46).jpg"><a href="a1 (46).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (47).jpg"><a href="a1 (47).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (48).jpg"><a href="a1 (48).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (49).jpg"><a href="a1 (49).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (50).jpg"><a href="a1 (50).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (51).jpg"><a href="a1 (51).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (52).jpg"><a href="a1 (52).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (53).jpg"><a href="a1 (53).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (54).jpg"><a href="a1 (54).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (55).jpg"><a href="a1 (55).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (56).jpg"><a href="a1 (56).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (57).jpg"><a href="a1 (57).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (58).jpg"><a href="a1 (58).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (59).jpg"><a href="a1 (59).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (60).jpg"><a href="a1 (60).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (61).jpg"><a href="a1 (61).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (62).jpg"><a href="a1 (62).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (63).jpg"><a href="a1 (63).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (64).jpg"><a href="a1 (64).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (65).jpg"><a href="a1 (65).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (66).jpg"><a href="a1 (66).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (67).jpg"><a href="a1 (67).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (68).jpg"><a href="a1 (68).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (69).jpg"><a href="a1 (69).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (70).jpg"><a href="a1 (70).jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p1.jpg"><a href="p1.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>    
+        </div>
+        <br><br><br>
+        <h2 style="margin-left: 10px;">Try Visiting Other Categories :</h2>
+        <br>
+        <div class="cat" style="display: flex;flex-wrap: wrap;">
+            <a class="cat" style="text-decoration: none;" href="u1.html" target="_self"><img class="c" src="wave.png"><figcaption>Nature</figcaption></a>
+            <a class="cat" style="text-decoration: none;" href="u2.html" target="_self"><img class="c" src="eren.png"><figcaption>Anime</figcaption></a>
+            <a class="cat" style="text-decoration: none;" href="u3.html" target="_self"><img class="c" src="game.png"><figcaption>Game</figcaption></a>
+        </div><br><br><hr>
+        <p style="font-size: 14px;margin-left: 10px;">&copy; 2025 Wits & Bytes. All rights reserved.</p>
+        <hr>
+</body>
+</html>

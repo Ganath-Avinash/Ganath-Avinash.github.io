@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wits & Bytes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="icon" href="w.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 90%;
+        margin: 10px auto;
+        columns: 4;
+        column-gap: 20px;
+    }    
+    .container .box{
+        width: 100%;
+        margin-bottom: 10px;
+        break-inside: avoid;
+    }
+    img.i{
+        max-width: 100%;
+        border-radius: 15px;
+        margin-left: 10px;
+        margin-right: 20px;
+        image-rendering:pixelated ;
+        transition: 0.4s all ease;
+    }
+    img.i:hover{
+        scale: 101%;
+        transition: 0.4s all ease;
+        cursor: pointer;
+    }
+        body{
+        background: rgb(238,174,202);
+        background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+        h1{
+            display: inline;
+            margin-left: 5px;
+            font-family: "Playwrite IT Moderna", cursive;
+            position: relative;
+            top: 8px;
+            font-weight: 400px;
+            font-style: normal;
+        }
+        ul{
+        margin-top:15px;
+        margin-right:17px;
+        display:inline;
+        }
+        li{
+        color:rgb(50, 49, 49);
+        padding:12px;
+        font-size:large;
+        display:inline;
+        }
+        a.g{
+            color: black;
+            position: relative;
+            top: 3px;
+            padding: 8px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+            font-weight: 400;
+        }
+        a.g:hover{
+            background-color: rgb(147, 88, 146);
+            color: rgb(255, 255, 255);
+        }
+        button{
+            all: unset;
+            font-family: Poppins;
+            font-size: large;
+            padding: 7px;
+            border-radius: 10px;
+            transition: 0.4s ease;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            transition: 0.4s ease-in-out;
+        }
+        input{
+            padding:6px;
+        }
+        p{
+            margin-left: 17px;
+            font-family: Poppins;
+            font-size: large;
+            text-align: center;
+            font-weight: 500;
+        }
+        h2{
+            margin-left: 17px;
+            font-family: Poppins;
+            font-size: larger;
+            text-align: center;
+            font-weight: 700;
+            padding-bottom: 17px;
+        }
+        img.c{
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.349);
+            border: 1px black solid;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            transition: 0.3s ease;
+        }
+        a.cat{
+            padding: 20px;
+        }
+        div.cat{
+            display: flex;
+            justify-content: center;
+        }
+        figcaption{
+            color: black;
+            text-align: center;
+            font-size: medium;
+            font-family: Poppins;
+            padding: 10px;
+            margin-top: 5px;
+            transition: 0.3s ease-in;
+            border-radius: 3px;
+        }
+        figcaption:hover{
+            border: 0px solid black;
+            scale: 105%;
+            font-weight: 500;
+            font-size: 18px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.274);
+            transition: 0.3s ease-in;
+            
+        }
+        img.c:hover{
+            background-color: rgba(0, 0, 0, 0.194);
+            scale: 101%;
+            border: 0px transparent ;
+            border-radius: 10px;
+            transition: 0.4s all ease;
+        }
+        html{
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        button.f {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        border-radius: 15px;
+        padding: 12px;
+        background-color: #df82c9;
+        color: white;
+        transform: translateX(100%);
+        border: 2px;
+        font-size: 16px;
+        transition: all 0.4s ease;
+        font-size: smaller;
+        display: none;
+        }
+        button.f:hover {
+        scale: 103%;
+        cursor: pointer;
+        background-color: #bf6bbb;
+        border-color: #723c63;
+        transition: all 0.4s ease;
+        }
+        div.box:hover .f{
+        display: block;
+        }
+        .d{
+        border-radius: 15px;
+        padding: 12px;
+        background-color: #df82c9;
+        color: white;
+        border: 2px;
+        font-size: 16px;
+        transition: all 0.4s ease;
+        font-size: smaller;
+        }
+        #bbc{
+            display: none;
+        }
+        .B{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            transition: 0.4s all ease;
+        }
+        .B:hover{
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.253);
+            color: rgb(0, 0, 0);
+        }
+        img.see:hover{
+            scale: 110%;
+            transition: 0.4s all ease;
+        }
+        #search-button:hover{
+            scale: 120%;
+            cursor: pointer;
+            transition: 0.4s all ease;
+        }
+        #into{
+            font-size: larger;display: none;background-color: transparent;color:black;border-radius: 30px;margin-left: 10px;
+        }
+        #into:hover{
+            color: red;
+            cursor: pointer;
+            scale: 120%;
+            transition: 0.4s all ease;
+        }
+        #bbc i{
+            color: rgb(117, 120, 120);
+            font-size: 30px;
+        }
+        #bbc i:hover{
+            color:red;
+        }
+        #bbc button:hover{
+            background-color: white;
+        }
+    @media (max-width:2160px){
+        #vis{
+            display: none;
+        }
+        #invis{
+            display: inline;
+        }
+        #bbc{
+            display: none;
+        }
+    }
+    @media (max-width:1200px){
+        .container{
+        width: 90%;
+        columns: 3;
+        }
+        #invis{
+            display: inline;
+        }
+        #vis{
+            display: none;
+        }
+        #bbc{
+            display: none;
+        }
+    }
+    @media (max-width:976px){
+        .container{
+        columns: 2;
+        }
+        #invis{
+            display: none;
+        }
+        #vis{
+            display: inline;
+        }
+        #bbc{
+            display: block;
+        }
+    }
+    @media (max-width:480px){
+        .container{
+        columns: 1;
+        }
+        .invis{
+            display: none;
+        }
+        .vis{
+            display: inline;
+        }
+        #bbc{
+            display: block;
+        }
+    }
+    .social-links {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+
+        .social-links a {
+            font-size: 2rem;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+            
+        }  
+
+        .social-links .fa-facebook-f { color: #ffffff; }
+        .social-links .fa-instagram { color: #ffffff; }
+        .social-links .fa-whatsapp { color: #ffffff; }
+        .social-links .fa-linkedin-in { color: #ffffff; }
+        .social-links .fa-twitter { color: #ffffff; }
+        .social-links .fa-youtube { color: #ffffff; }
+    </style>
+</head>
+<body id="ganath">  
+        <div style="background-color: white;height: 70px;box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.479);position: sticky;top: 0px;z-index: 2;width: 100%;">
+        <a href="s1.html" target="_self" style="all: unset;cursor: pointer;display: inline;"><h1 style="padding: 10px;">Bytes</h1></a>
+        <div style="display: inline;">
+            <ul style="float: right;" id="vis">
+              <li><button style="position: relative;top:2px;width: 25px;text-align: center;"class="B"><i class="fa fa-bars" aria-hidden="true" onclick="vandhu()"></i></button></li>
+            </ul>
+            <ul style="font-family: 'Poppins';font-size: smaller;float: right;" id="invis">
+                <li style="margin-right: 35px;"><img src="222.png" class="see" id="see" width="30px" style="position: absolute;top:25px;cursor: pointer;transition: 0.4s all ease;transition: 0.4s all ease;margin-right: 10px;" height="30px" onclick="bring()"><input type="search" style="border-radius: 5px;border: 1px;box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.511);text-align: center;display: none;" id="search-input" placeholder="Search Category"><button id="search-button" style="font-size: larger;display: none;background-color: transparent;color:black;border-radius: 30px;margin-left: 10px;" onclick="read()">⌕</button><button id="into" onclick="reado()">x</button></li>
+                <li><a href="#ganath" style="text-decoration: none;" class="g">Home</a></li>
+                <li><a href="png3.html" target="_self" style="text-decoration: none;" class="g">PNG</a></li>
+                <li><a href="#fadee" style="text-decoration: none;" class="g">About Us</a></li>
+                <li><a href="Contact.html" target="_blank" style="text-decoration: none;" class="g">Contact</a></li>
+                <li><button style="position: relative;top:2px;" onclick="make()" class="B">Log out&ThickSpace;&ThickSpace;⍈</button></li>
+            </ul>
+        </div>
+    </div>
+    <div id="bbc" style="position:fixed; top:70px; width:40%; height: 100%; background-color: #ffffff;border: 2px solid black; right:-550px;">
+        <button style="float: right;margin-right: 30px;margin-top: 10px;" onclick="closee()"><i class="fa-solid fa-xmark"></i></button><br><br><br>
+        <a href="s1.html" target="_self" style="text-decoration: none;margin-left: 10px; " class="g">Home</a><br><br><br>
+        <a href="png3.html" target="_self" style="text-decoration: none; margin-left: 10px;" class="g">PNG</a><br><br><br>
+        <a href="Contact.html" target="_blank" style="text-decoration: none; margin-left: 10px;" class="g">Contact</a><br><br><br>
+        <a href="#fadee" style="text-decoration: none;margin-left: 10px;" onclick="koi()" class="g">About Us</a><br><br><br>
+        <button style="position: relative;top:2px;margin-left: 10px;" onclick="make()" class="B">⏻ Log-out</button><br><br><br>
+    </div>
+    <br><br><br>
+    <h2 style="font-size: 27px;">
+        Image Gallery
+    </h2><br>
+    <div class="container">
+        <div class="box"><img class="i" src="p1.jpg"><a href="p1.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p2.jpg"><a href="p2.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p3.jpg"><a href="p3.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p4.jpg"><a href="p4.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p5.jpg"><a href="p5.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p6.jpg"><a href="p6.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p7.jpg"><a href="p7.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p8.jpg"><a href="p8.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p9.jpg"><a href="p9.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p10.jpg"><a href="p10.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p11.jpg"><a href="p11.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p12.jpg"><a href="p12.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p13.jpg"><a href="p13.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p14.jpg"><a href="p14.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (75).jpg"><a href="a1 (75).jpg" style="text-decoration: none;"download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p15.jpg"><a href="p15.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p16.jpg"><a href="p16.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p17.jpg"><a href="p17.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p18.jpg"><a href="p18.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p19.jpg"><a href="p19.jpg" style="text-decoration: none;" download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="p20.jpg"><a href="p20.jpg" style="text-decoration: none;"download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+        <div class="box"><img class="i" src="a1 (65).jpg"><a href="a1 (65).jpg" style="text-decoration: none;"download><button class="f"><i class="fa-solid fa-download" style="color: white;"></i>&ThickSpace;&ThickSpace;Download</button></a></div>
+    </div>
+    <br><br><br><br><center><a href="gal.html" style="text-decoration: none;" target="_self"><button class="d" style="font-family: Poppins;font-size: large;">&ThickSpace;&ThickSpace;More&ThickSpace;&ThickSpace;→</button></a></center><br><br><br><br><br>
+    <h2>Trending Category</h2><br>
+    <div class="cat" style="display: flex;flex-wrap: wrap;">
+    <a class="cat" style="text-decoration: none;" href="u1.html" target="_self"><img class="c" src="wave.png"><figcaption>Nature</figcaption></a>
+    <a class="cat" style="text-decoration: none;" href="u2.html" target="_self"><img class="c" src="eren.png"><figcaption>Anime</figcaption></a>
+    <a class="cat" style="text-decoration: none;" href="u3.html" target="_self"><img class="c" src="game.png"><figcaption>Game</figcaption></a>
+    <a class="cat" style="text-decoration: none;" href="u4.html" target="_self"><img class="c" src="aes.png"><figcaption>Minimalistic</figcaption></a>
+    </div><br><br><br><br>
+    <div id="fadee">
+    <h2>About Us</h2>
+    <p>Welcome to 'Wits & bytes', your ultimate destination for stunning wallpapers! Whether you're looking to personalize your desktop, phone, or tablet, we offer a wide range of high-quality, handpicked wallpapers to suit every taste and style. From breathtaking landscapes to abstract art, minimalistic designs to vibrant photography, we have something for everyone. Browse our collections, find the perfect backdrop, and transform your screen into a masterpiece today!</p>
+</div>
+    <br><br><br>
+    <div class="social-links scroll-animation" style="background-color: black;padding: 10px;">
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/shineaccounting" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/shineaccounting" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.youtube.com/@shineaccounting" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+    <script src="jsss.js"></script>
+</body>
+</html>

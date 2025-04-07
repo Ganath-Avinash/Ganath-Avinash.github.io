@@ -1,0 +1,42 @@
+body{
+    background: rgb(43,46,130);
+    background: linear-gradient(90deg, rgba(43,46,130,1) 0%, rgba(35,96,168,1) 100%);
+    font-family: Poppins;
+    color: white;
+}
+form input,
+form textarea {
+    width: 93%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: Poppins;
+    transition: border-color 0.3s ease;
+}
+form input:focus,
+form textarea:focus {
+    border-color: #1e90ff;
+    outline: none;
+}
+form button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    width: 95%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+form button:hover {
+    background-color: #0077cc;
+}
+form input:hover,form textarea:hover{
+    border: 2px solid #1e90ff;
+}
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="lo.css">
+    <link rel="icon" href="w.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        label {
+            float: left;
+            padding-bottom: 5px;
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body style="background-image: url(pg.jpg);background-size: cover;">
+    <div class="login-container">
+        <h2>Register-up</h2><br>
+        <form action="https://api.web3forms.com/submit" onsubmit="return validateForm()" method="POST">
+            <input type="hidden" name="access_key" value="c2d0d2f2-6ee1-4ead-a5dc-4e67ce03c6b4">
+            <label for="username">Set Username:</label>
+            <input type="text" id="uname" name="name" placeholder="Enter Username [No Special Characters Allowed]" required><br>
+            <label for="username">Set Password:</label>
+            <input type="password" id="password" name="email"placeholder="Enter Password" required><br>
+            <label for="username">Confirm Password:</label>
+            <input type="password" id="cpassword" name="email"placeholder="Confirm Password" required><br><br>
+            <button type="submit" onclick="validateForm()">Submit Form</button><br>
+            <p>Have an account? &ThickSpace;<a href="lo.html">Log In</a></p>
+        </form>
+    </div>
+    <script>
+         function validateForm() {
+            const fname = document.getElementById("uname").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("cpassword").value;
+
+            let errorMessage = "";
+            if (fname === "") {
+                errorMessage += "Enter Username!!.\n";
+            }
+            const nPattern = /^[a-zA-Z]+(?: [a-zA-Z]+)*$/;
+            if(!nPattern.test(fname)){
+                errorMessage+="Enter a valid Username!!.\n"
+            }
+            if (password !== confirmPassword) {
+                errorMessage += "Passwords do not match.\n";
+            }
+            if (errorMessage !== "") {
+                alert(errorMessage);
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
